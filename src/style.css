@@ -17,13 +17,16 @@ ul {
 
 li {
     list-style: none;
-    text-transform: capitalize;
     margin: 0;
     padding: 0;
     color: rgb(155, 155, 155);
     font-size: 14px;
     font-weight: 100;
     line-height: 18px;
+}
+
+li::first-letter {
+    text-transform: capitalize;
 }
 
 .weather-app-wrapper{
