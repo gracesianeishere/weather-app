@@ -10,8 +10,9 @@
 </head>
 <body>
     <div class="container">
-     
+    <div class="weather-app-wrapper">
     <div class="weather-app">
+        <div class="overview">
     <h1>
         Jakarta
     </h1>
@@ -23,10 +24,13 @@
            Clear 
         </li>
     </ul>
+    </div>
     <div class="row">
         <div class="col-6">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Clear"/>
-            25°C | °F
+            <div class="d-flex weather-temperature">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Clear" id="icon"/>
+            <strong id="temperature">25</strong><span class="units">°C | <a href= "#" class="fahrenheit">°F</a></span>
+            </div>
         </div>
         <div class="col-6">
             <ul>
@@ -42,10 +46,10 @@
             </ul>
         </div>
     </div>
-    <small>
+    </div>
+    <small class="footer">
         <a href="https://github.com/gracesianeishere/weather-app" target="_blank">Open-source code</a> by Gracesiane J.
     </small>
-    </div>
     </div>
 <script src="app.js"></script>
 </body>
