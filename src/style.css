@@ -66,3 +66,13 @@ line-height: 1;
 .fahrenheit {
     text-decoration: none;
 }
+
+.active {
+    text-decoration: none;
+    color: rgb(32, 33, 36);
+    cursor: default;
+}
+
+.active:hover {
+    text-decoration: none;
+}
